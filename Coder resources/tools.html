@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tools</title>
+    <meta name="keywords" content="Developer, Learning, Tools">
+    <meta name="description" content="Tools">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="robust.css">
+    <script>
+      function showUnderConstructionMessage(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        alert("This feature is still under construction.");
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper">
+        <nav>
+          <div class="logo">
+            <img src="profile.png" alt="icon" class="logo-icon">
+            <div class="logo-text">Arjan</div>
+          </div>
+          <ul class="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="step.html">Steps</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <section class="info">
+          <div class="tools-container">
+            <div class="tools-list">
+              <h2>Tools You Should Consider</h2>
+              <ul>
+                <li id="text-editors">Text Editor
+                  <ul>
+                    <li><a href="https://code.visualstudio.com/" target="_blank" class="link">Visual Studio Code</a></li>
+                    <li><a href="https://www.sublimetext.com/" target="_blank" class="link">Sublime Text</a></li>
+                    <li><a href="https://notepad-plus-plus.org/" target="_blank" class="link">Notepad++</a></li>
+                  </ul>
+                </li>
+                <li id="version-control">Version Control
+                  <ul>
+                    <li><a href="https://git-scm.com/" target="_blank" class="link">Git</a></li>
+                    <li><a href="https://github.com/" target="_blank" class="link">GitHub</a></li>
+                    <li><a href="https://bitbucket.org/" target="_blank" class="link">Bitbucket</a></li>
+                    <li><a href="https://gitlab.com/" target="_blank" class="link">GitLab</a></li>
+                  </ul>
+                </li>
+                <li id="ides">Integrated Development Environments (IDEs)
+                  <ul>
+                    <li><a href="https://www.jetbrains.com/idea/" target="_blank" class="link">IntelliJ IDEA</a></li>
+                    <li><a href="https://code.visualstudio.com/" target="_blank" class="link">Visual Studio Code</a></li>
+                    <li><a href="https://eclipse.org/" target="_blank" class="link">Eclipse</a></li>
+                    <li><a href="https://netbeans.apache.org/" target="_blank" class="link">NetBeans</a></li>
+                  </ul>
+                </li>
+                <li id="databases">Database Management Tools
+                  <ul>
+                    <li><a href="https://www.mysql.com/products/workbench/" target="_blank" class="link">MySQL Workbench</a></li>
+                    <li><a href="https://www.pgadmin.org/" target="_blank" class="link">pgAdmin</a></li>
+                    <li><a href="https://www.mongodb.com/products/compass" target="_blank" class="link">MongoDB Compass</a></li>
+                    <li><a href="https://dbeaver.io/" target="_blank" class="link">DBeaver</a></li>
+                  </ul>
+                </li>
+                <li>Communication Tools
+                  <ul>
+                    <li><a href="https://slack.com/" target="_blank" class="link">Slack</a></li>
+                    <li><a href="https://www.atlassian.com/software/jira" target="_blank" class="link">Jira</a></li>
+                    <li><a href="https://microsoftteams.com/" target="_blank" class="link">Microsoft Teams</a></li>
+                    <li><a href="https://zoom.us/" target="_blank" class="link">Zoom</a></li>
+                  </ul>
+                </li>
+                <li>Package Managers
+                  <ul>
+                    <li><a href="https://www.npmjs.com/" target="_blank" class="link">npm</a></li>
+                    <li><a href="https://pip.pypa.io/en/stable/" target="_blank" class="link">pip</a></li>
+                    <li><a href="https://yarnpkg.com/" target="_blank" class="link">Yarn</a></li>
+                  </ul>
+                </li>
+                <li>Build Tools
+                  <ul>
+                    <li><a href="https://maven.apache.org/" target="_blank" class="link">Apache Maven</a></li>
+                    <li><a href="https://gradle.org/" target="_blank" class="link">Gradle</a></li>
+                    <li><a href="https://ant.apache.org/" target="_blank" class="link">Apache Ant</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="feedback-container">
+              <div class="funny-gif">
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3dwanBkN2Y2NWRseGdjYTQyaW5tYjB5bjNpOHk2N2d0eTVmdGN0MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2IudUHdI075HL02Pkk/giphy.gif" alt="Funny GIF" />
+                <iframe src="https://www.youtube.com/embed/WR1ydijTx5E" frameborder="0" allowfullscreen></iframe>
+                <p class="video-credit">Video by <a href="https://www.youtube.com/@TimKimMe" target="_blank">TimKimMe</a></p>
+              </div>
+
+              <h3>Submit Feedback for More Tools</h3>
+              <form action="#" method="POST" enctype="text/plain" class="feedback-form" onsubmit="showUnderConstructionMessage(event)">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="suggestion">Tool Suggestion:</label>
+                <textarea id="suggestion" name="suggestion" rows="4" placeholder="What tools should I add?" required></textarea>
+
+                <button type="submit" class="btn submit-btn">Submit Feedback</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <nav>
+          <a href="#top">Back to Top</a>
+        <p>&copy; 2024 Arjan. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

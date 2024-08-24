@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Home</title>
+    <meta name="keywords" content="Developer, Portfolio, Projects">
+    <meta name="description" content="Home">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+
+  <body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <img src="profile.png" alt="icon" class="logo-icon">
+                    <div class="logo-text">Arjan</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="step.html">Steps</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="profile.png" id="logo" alt="Logo">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm a <span id="type">Frontend Developer</span></h5>
+                    <h1>Arjan</h1>
+                    <p>I am a developer that is very interested in improving his skills and working for a big company one day. I wanted to make this website to help beginners to code because it's very hard to start without knowing much resources.
+                    </p>
+                    <div class="btn-group">
+                        <a href="https://github.com/ArjanL1" class="btn social-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a> 
+                        <a href="https://www.linkedin.com/in/arjanlako" class="btn social-btn">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-arrow">
+                <a href="#showcase"><img src="down-arrow.png" alt="Scroll Down"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-hr-container">
+        <div class="custom-hr"></div>
+    </div>
+    
+
+    <div class="showcase" id="showcase">
+        <div class="wrapper">
+            <div class="showcase-item">
+                <a href="step.html">
+                    <img src="Code.png" alt="Code">
+                    <div class="showcase-text">Steps to become a Developer</div>
+                </a>
+            </div>
+            <div class="showcase-item">
+                <a href="tools.html">
+                    <img src="Tool.png" alt="Tool">
+                    <div class="showcase-text">Tools for Developers</div>
+                </a>
+            </div>
+            <div class="showcase-item">
+                <a href="resources.html">
+                    <img src="resources.png" alt="Resources">
+                    <div class="showcase-text">Learning Resources</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var options = {
+            strings: ['Frontend Developer', 'Backend Developer', 'Web Developer', 'Fullstack Developer'],
+            typeSpeed: 100,
+            backSpeed: 50,
+            startDelay: 500,
+            backDelay: 3000,
+            showCursor: true,
+            cursorChar: '|',
+        };
+
+        var typed = new Typed('#type', options);
+    </script>
+  </body>
+</html>
